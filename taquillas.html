@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Taquillas - Valencia CF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/escudito vlc.jpeg" width="130" height="100" alt="escudo Valencia">
+        <h1>Compra tus Entradas - Valencia CF</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="plantilla.html">Plantilla</a></li>
+                <li><a href="taquillas.html">Taquillas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Formulario de Solicitud de Entradas</h2>
+            <form action="procesar_entrada.php" method="POST">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="entradas">Número de Entradas:</label>
+                <input type="number" id="entradas" name="entradas" min="1" max="10" required>
+                
+                <label for="preferencias">Preferencias de Asientos:</label>
+                <select id="preferencias" name="preferencias">
+                    <option value="tribuna">Tribuna</option>
+                    <option value="gol_norte">Gol Norte</option>
+                    <option value="gol_sur">Gol Sur</option>
+                    <option value="grada_central">Grada Central</option>
+                </select>
+                
+                <button type="submit">Solicitar Entradas</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Valencia CF - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
